@@ -43,7 +43,7 @@ const (
 
 var (
 	port      = flag.Int("port", 8984, "http port to listen on for local admin / queries")
-	zkServers = flag.String("zkServers", "172.31.5.241:2181,172.31.12.120:2181,172.31.2.97:2181/solr", `comma separated list of the zk servers solr is using; ip:port or hostname:port, followed by /solr`)
+	zkServers = flag.String("zkServers", "172.31.5.241:2181,172.31.12.120:2181,172.31.2.97:2181", `comma separated list of the zk servers solr is using; ip:port or hostname:port, followed by /solr`)
 )
 
 func main() {
